@@ -1,0 +1,48 @@
+! transparency settings for URxvt, where 95 is opacity percentage and 000000 is the background color
+URxvt.depth: 32
+URxvt.background: [95]#1b1b1b
+
+! special
+*.foreground:   #929ba0
+*.cursorColor:  #929ba0
+
+! black
+*.color0:       #20282c
+*.color8:       #40484c
+
+! red
+*.color1:       #684850
+*.color9:       #886870
+
+! green
+*.color2:       #506450
+*.color10:      #708470
+
+! yellow
+*.color3:       #705848
+*.color11:      #907868
+
+! blue
+*.color4:       #506070
+*.color12:      #708090
+
+! magenta
+*.color5:       #585058
+*.color13:      #7c7078
+
+! cyan
+*.color6:       #485858
+*.color14:      #687878
+
+! white
+*.color7:       #8c8c88
+*.color15:      #acaca8
+
+! sets font for URxvt
+URxvt.font: xft:Hack:size=9
+
+! sets the scrollbar to false
+URxvt.scrollBar: false
+
+! control font spacing, where -1 is decreasing pixel spacing by one
+URxvt.letterSpace: -1
