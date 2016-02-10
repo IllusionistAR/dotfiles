@@ -55,5 +55,6 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 sh ~/.fehbg &
+udiskie &
 compton -b
 exec i3
