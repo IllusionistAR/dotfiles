@@ -149,10 +149,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# border colors      
-client.focused          #383838 #383838 #B8B8B8 #383838
+# border colors
+# client.focused        #B8B8B8 #B8B8B8 #2b303b #B8B8B8
+# client.focused        #383838 #383838 #B8B8B8 #383838
 client.focused_inactive #383838 #383838 #B8B8B8 #383838
-client.unfocused        #B8B8B8 #B8B8B8 #2b303b #B8B8B8
+client.unfocused        #383838 #383838 #B8B8B8 #383838
+
+# client.unfocused      #B8B8B8 #B8B8B8 #2b303b #B8B8B8
 client.urgent           #383838 #383838 #B8B8B8 #383838
 client.placeholder      #B8B8B8 #B8B8B8 #B8B8B8 #B8B8B8
 
@@ -188,3 +191,7 @@ gaps outer 2
 
 #borders for windows
 smart_borders on
+
+
+# starting programs
+exec-always nm-applet
