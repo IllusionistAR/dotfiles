@@ -1,48 +1,73 @@
+!TomorrowNightBright
+#define t_background        #000000
+#define t_current_line      #2a2a2a
+#define t_selection      	#424242
+#define t_foreground      	#eaeaea
+#define t_comment	     	#969896
+#define t_red		     	#d54e53
+#define t_orange	     	#e78c45
+#define t_yellow        	#e7c547
+#define t_green	        	#b9ca4a
+#define t_aqua	        	#70c0b1
+#define t_blue	        	#7aa6da
+#define t_purple #c397d8
+
 ! transparency settings for URxvt, where 95 is opacity percentage and 000000 is the background color
 URxvt.depth: 32
-URxvt.background: [95]#1b1b1b
+URxvt.background: [75]#1b1b1b
 
-! special
-*.foreground:   #929ba0
-*.cursorColor:  #929ba0
+*.foreground:   t_foreground
+*.background:   t_background
+*.cursorColor:  #aeafad
 
-! black
-*.color0:       #20282c
-*.color8:       #40484c
+! Black / Grey
+*.color0:       #000000
+*.color8:       #666666
 
-! red
-*.color1:       #684850
-*.color9:       #886870
+! Red / Bright Red
+*.color1:       t_red
+*.color9:       #FF3334
 
-! green
-*.color2:       #506450
-*.color10:      #708470
+! Green + Bright Green
+*.color2:       t_green
+*.color10:      #9ec400
 
-! yellow
-*.color3:       #705848
-*.color11:      #907868
+! Yellow (Orange) + Bright Yellow (Yellow)
+*.color3:       t_orange
+*.color11:      t_yellow
 
-! blue
-*.color4:       #506070
-*.color12:      #708090
+! Blue + Bright Blue
+*.color4:       t_blue
+*.color12:      t_blue
 
-! magenta
-*.color5:       #585058
-*.color13:      #7c7078
+! Magenta (Purple) + Bright Magenta
+*.color5:       t_purple
+*.color13:      #b777e0
 
-! cyan
-*.color6:       #485858
-*.color14:      #687878
+! Cyan (Aqua) + Bright Cyan
+*.color6:       t_aqua
+*.color14:      #54ced6
 
-! white
-*.color7:       #8c8c88
-*.color15:      #acaca8
+! Light Grey (Selection) + White (Current Line)
+*.color7:       t_selection
+*.color15: t_current_line
 
 ! sets font for URxvt
-URxvt.font: xft:Hack:size=9
+URxvt.font: xft:Inconsolata:size=10
 
 ! sets the scrollbar to false
 URxvt.scrollBar: false
 
 ! control font spacing, where -1 is decreasing pixel spacing by one
 URxvt.letterSpace: -1
+
+rofi.font: Inconsolata 20
+rofi.lines:	4
+rofi.eh: 2
+rofi.opacity: 85
+rofi.padding: 400
+rofi.color-enabled: true
+rofi.color-window: #000000, #000000, #000000
+rofi.color-normal: #000000, #eaeaea, #000000, #000000, #eaeaea
+rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3

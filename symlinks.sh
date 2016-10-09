@@ -7,15 +7,16 @@ dir=~/dotfiles
 files="Xresources bash_profile bashrc xinitrc"
 
 for file in $files; do
-	ln -s $dir/$file ~/.$file
+	ln -sf $dir/$file ~/.$file
 done
 
 # creating folders for symlinking in .config
 mkdir ~/.config/i3
+mkdir ~/.config/bspwm
 
 # files to symlink to the .config folder
-files="i3/config i3/i3status.conf i3/windowtitle.sh"
+files="i3/config i3/i3status.conf i3/windowtitle.sh bspwm/bspwmrc"
 
 for file in $files; do
-	ln -s $dir/$file ~/.config/$file
+	ln -sf $dir/$file ~/.config/$file
 done
