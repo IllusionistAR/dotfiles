@@ -13,9 +13,10 @@ done
 # creating folders for symlinking in .config
 mkdir ~/.config/i3
 mkdir ~/.config/bspwm
+mkdir ~/.config/bar
 
 # files to symlink to the .config folder
-files="i3/config i3/i3status.conf i3/windowtitle.sh bspwm/bspwmrc"
+files="i3/config i3/i3status.conf i3/windowtitle.sh bspwm/bspwmrc bar/bar.sh"
 
 for file in $files; do
 	ln -sf $dir/$file ~/.config/$file
